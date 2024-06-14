@@ -14,6 +14,8 @@ source ~/.zshrc
 nvm install v18.19.1
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 cargo install --locked zellij
+brew install lazygit
+brew install --cask visual-studio-code
 
 # Install General tools
 brew install --cask google-chrome
