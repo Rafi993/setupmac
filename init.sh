@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# Remove all items from the doc
+defaults write com.apple.dock persistent-apps -array
+killall Dock
+
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> $HOME/.zprofile
